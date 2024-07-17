@@ -222,7 +222,7 @@ h1 {
     position: fixed;
     left: 0rem;
     width: 250px;
-    height: calc(100vh - 15vh);
+    height: calc(100vh - 10vh);
 }
 
 .abrirmenu {
@@ -239,7 +239,6 @@ h1 {
     position: fixed;
     left: 0rem;
     width: 250px;
-    height: calc(100vh - 15vh);
 }
 
 .filtro ul li {
@@ -413,10 +412,6 @@ button :hover {
     .gif {
         height: 90vh;
     }
-
-    /* .gif h2 {
-        top: 640px;
-    } */
 
     .tarjetasdecompra div a img {
         width: 130px;
@@ -702,6 +697,7 @@ button :hover {
 }
 
 @media (max-width:950px){
+
     .itemgrilla {
         height: 220px;
         margin: 10px;
@@ -743,7 +739,7 @@ button :hover {
 
     .boton {
         width: 84px;
-        height: calc(100vh - 10vh);
+        height: calc(100vh - auto);
     }
 
 
@@ -779,12 +775,22 @@ button :hover {
         font-size: 1.7rem;
         background-color: transparent;
     }
+
+    .abrirmenu i {
+        color: black !important;
+        background-color: transparent !important;
+    }
     .cerrarmenu {
         margin-left: 45px;
         display: block;
         border: 0;
         font-size: 1.7rem;
         background-color: transparent;
+    }
+
+    .cerrarmenu i {
+        color: black !important;
+        background-color: transparent !important;
     }
 
     .filtro.visible {
