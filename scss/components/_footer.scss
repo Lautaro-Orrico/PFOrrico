@@ -1,0 +1,61 @@
+/*! FOOTER */
+
+footer {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-principal;
+    align-items: self-end;
+}
+
+/*? METODOS DE PAGO */
+
+.metodospago {
+    align-items: center;
+    text-align: center;
+    h4 {
+        font-size: 18px;
+        color: black;
+        font-weight: 620;
+    }
+    a {
+        img {
+            height: 57px;
+            width: 57px;
+        }
+    }
+}
+
+/*? REDES SOCIALES */
+
+.redesociales {
+    text-align: right;
+    background-color: $color-principal;
+    a {
+        img {
+            height: 37px;
+            width: 37px;
+        }
+    }
+}
+
+/*? CONTACTO */
+
+.contactanos {
+    background-color: $color-principal;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    h4 {
+        color: black;
+        font-size: 18px;
+        font-weight: 620;
+    }
+    a {
+        img {
+            height: 44px;
+            width: 44px;
+        }
+    }
+}

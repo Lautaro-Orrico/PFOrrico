@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+/*! RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+//! VARIABLES 
+$color-principal:#e4e3cd;
+$color-secundario:#ececdd;
+
+%flex {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: $color-secundario;
+}
+
+@mixin grid ($grid, $rows , $columns){
+    display: $grid;
+    grid-template-rows: $rows;
+    grid-template-columns: $columns;
+}
+
+
+
+
+
+/*! GENERAL */
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 21px;
+    color: black;
+    font-weight: 600;
+}
+
+h3 {
+    color: black;
+    font-weight: 700;
+    font-size: 18.72px;
+}
+
+button {
+    background-color: $color-secundario;
+    padding: 10px;
+    border-style: none;
+    a {
+        color: black;
+        font-size: 18px;
+        font-weight: 550;
+        border-radius: 10px;
+        border-color: black;
+        border-style: groove;
+        border-width: 1px;
+        padding: 4px;
+        &:hover {
+            background-color: $color-principal;
+            color: black;
+        }
+    }
+}
+
+/* NAV BOOTSTRAP */
+
+.navbar {
+    background-color: $color-principal !important;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.collapse {
+    margin: auto;
+    margin-left: 150px;
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.nav-item {
+    margin: 10px;
+    a {
+        &:hover {
+            color: rgba(0, 0, 0, 0.719)!important;
+        }
+        color: black !important;
+        font-size: 17px;
+        font-weight: 700;
+    }
+}
+
+.dropdown-menu {
+    background-color: $color-principal;
+    li {
+        a {
+            &:hover {
+                background-color: $color-principal;
+            }
+            &:active {
+                background-color: $color-principal;
+            }
+            &:visited {
+                background-color: $color-principal;
+            }
+        }
+    }
+}
+
+.form-control {
+    background-color: $color-principal;
+    border-width: 0;
+    border: 1px solid black;
+    &:focus {
+        box-shadow: none;
+        border: 2px solid black;
+        background-color: $color-secundario;
+    }
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    background-color: $color-principal;
+    border: 1px solid black;
+    &:hover {
+        background-color: $color-secundario;
+        color: black;
+        border: 2px solid black;
+    }
+}
+
+/*? LOGO */
+
+.navbar-brand img {
+    height: 50px;
+}
+

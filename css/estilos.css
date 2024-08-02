@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/*! RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif; }
+
+.gif, .tarjetasdecompra, .destacado {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #ececdd; }
+
+/*! GENERAL */
+a {
+  text-decoration: none; }
+
+h2 {
+  font-size: 21px;
+  color: black;
+  font-weight: 600; }
+
+h3 {
+  color: black;
+  font-weight: 700;
+  font-size: 18.72px; }
+
+button {
+  background-color: #ececdd;
+  padding: 10px;
+  border-style: none; }
+  button a {
+    color: black;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 10px;
+    border-color: black;
+    border-style: groove;
+    border-width: 1px;
+    padding: 4px; }
+    button a:hover {
+      background-color: #e4e3cd;
+      color: black; }
+
+/* NAV BOOTSTRAP */
+.navbar {
+  background-color: #e4e3cd !important;
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.collapse {
+  margin: auto;
+  margin-left: 150px; }
+
+.navbar-nav {
+  margin: auto; }
+
+.nav-item {
+  margin: 10px; }
+  .nav-item a {
+    color: black !important;
+    font-size: 17px;
+    font-weight: 700; }
+    .nav-item a:hover {
+      color: rgba(0, 0, 0, 0.719) !important; }
+
+.dropdown-menu {
+  background-color: #e4e3cd; }
+  .dropdown-menu li a:hover {
+    background-color: #e4e3cd; }
+  .dropdown-menu li a:active {
+    background-color: #e4e3cd; }
+  .dropdown-menu li a:visited {
+    background-color: #e4e3cd; }
+
+.form-control {
+  background-color: #e4e3cd;
+  border-width: 0;
+  border: 1px solid black; }
+  .form-control:focus {
+    box-shadow: none;
+    border: 2px solid black;
+    background-color: #ececdd; }
+
+.btn {
+  background-color: white;
+  border: none;
+  background-color: #e4e3cd;
+  border: 1px solid black; }
+  .btn:hover {
+    background-color: #ececdd;
+    color: black;
+    border: 2px solid black; }
+
+/*? LOGO */
+.navbar-brand img {
+  height: 50px; }
+
+/*! Header */
+header {
+  background-color: #e4e3cd;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 550;
+    color: black;
+    text-align: center;
+    background-color: #e4e3cd; }
+
+/*? BARRAS DE CADA PAGE */
+.barradestacado {
+  background-color: #e4e3cd;
+  font-size: 14px;
+  padding: 6px; }
+  .barradestacado h2 {
+    margin-left: 55px;
+    font-weight: 650; }
+
+/*! MAIN */
+.gif {
+  width: 100%;
+  height: 88vh;
+  justify-content: center;
+  background-image: url(../Video/OpPP2.webp);
+  background-size: contain;
+  background-color: #ececdd;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .gif h2 {
+    position: relative;
+    top: 31%;
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: black;
+    transition: 0.2s; }
+    .gif h2:hover {
+      transform: scale(1.05); }
+    .gif h2 a {
+      color: black;
+      background-color: #e4e3cde3;
+      text-decoration: none;
+      border-radius: 26px;
+      padding: 10px;
+      border: 2px solid black; }
+      .gif h2 a:hover {
+        background-color: #e4e3cd85;
+        color: black; }
+
+/*? GRILLA */
+.grilla {
+  display: grid;
+  grid-template-rows: repeat 4, auto;
+  grid-template-columns: auto auto auto;
+  background-color: #ececdd;
+  margin-left: 250px;
+  grid-template-areas: "main main main" "main main main" "main main main" "main main main"; }
+
+.itemgrilla {
+  align-items: center;
+  text-align: center;
+  background-color: #ececdd;
+  height: 450px;
+  margin: 10px; }
+  .itemgrilla a img {
+    height: 300px; }
+
+/*? FILTRO GRILLA */
+.boton {
+  background-color: #e4e3cd;
+  border-color: black;
+  position: fixed;
+  left: 0rem;
+  width: 250px;
+  height: calc(100vh - 10vh); }
+
+.abrirmenu {
+  display: none; }
+
+.cerrarmenu {
+  display: none; }
+
+.filtro {
+  background-color: #e4e3cd;
+  border-color: black;
+  position: fixed;
+  left: 0rem;
+  width: 250px; }
+  .filtro ul li {
+    margin-left: 20px;
+    list-style: none; }
+    .filtro ul li h3 {
+      margin: 10px;
+      font-size: 16px; }
+    .filtro ul li p {
+      margin: 0;
+      margin-left: 20px;
+      font-weight: 500;
+      color: black; }
+
+.main {
+  background-color: #e4e3cd;
+  grid-area: main; }
+
+/*? TARJETAS DE COMPRA */
+.tarjetasdecompra {
+  justify-content: space-around;
+  background-color: #ececdd;
+  padding: 15px; }
+  .tarjetasdecompra div {
+    transition: 0.7s; }
+    .tarjetasdecompra div:hover {
+      box-shadow: 0px 1px 11px 1px rgba(0, 0, 0, 0.26);
+      -webkit-box-shadow: 0px 1px 11px 1px rgba(0, 0, 0, 0.26);
+      -moz-box-shadow: 0px 1px 11px 1px rgba(0, 0, 0, 0.26); }
+    .tarjetasdecompra div a img {
+      width: 200px;
+      margin: 10px; }
+
+/*? DESTACADO */
+.destacado {
+  justify-content: space-evenly;
+  background-color: #ececdd;
+  padding: 15px; }
+  .destacado div a img {
+    transition: 0.5s;
+    width: 400px;
+    height: auto;
+    margin: 15px; }
+    .destacado div a img:hover {
+      box-shadow: 0px 1px 41px 1px rgba(0, 0, 0, 0.36);
+      -webkit-box-shadow: 0px 1px 41px 1px rgba(0, 0, 0, 0.36);
+      -moz-box-shadow: 0px 1px 41px 1px rgba(0, 0, 0, 0.36); }
+  .destacado div h3 {
+    font-size: 22px;
+    text-decoration: none;
+    color: black; }
+
+/*! FOOTER */
+footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e4e3cd;
+  align-items: self-end; }
+
+/*? METODOS DE PAGO */
+.metodospago {
+  align-items: center;
+  text-align: center; }
+  .metodospago h4 {
+    font-size: 18px;
+    color: black;
+    font-weight: 620; }
+  .metodospago a img {
+    height: 57px;
+    width: 57px; }
+
+/*? REDES SOCIALES */
+.redesociales {
+  text-align: right;
+  background-color: #e4e3cd; }
+  .redesociales a img {
+    height: 37px;
+    width: 37px; }
+
+/*? CONTACTO */
+.contactanos {
+  background-color: #e4e3cd;
+  align-items: center;
+  text-align: center;
+  position: sticky;
+  bottom: 0; }
+  .contactanos h4 {
+    color: black;
+    font-size: 18px;
+    font-weight: 620; }
+  .contactanos a img {
+    height: 44px;
+    width: 44px; }
+
+/*? INDEX */
+@media (max-width: 1500px) {
+  .navbar-nav {
+    margin: 0; }
+  .collapse {
+    margin: auto;
+    margin-left: 0px; } }
+
+@media (max-width: 1400px) {
+  .gif {
+    height: 90vh; }
+  .tarjetasdecompra div a img {
+    width: 130px;
+    margin: 10px; }
+  .destacado div a img {
+    width: 300px; } }
+
+@media (max-width: 1101px) {
+  .gif {
+    height: 85vh; } }
+
+@media (max-width: 1050px) {
+  .destacado div a img {
+    width: 250px; }
+  .tarjetasdecompra {
+    display: grid;
+    grid-template-rows: repeat 2, auto;
+    grid-template-columns: auto auto; }
+  .gif {
+    height: 80vh; } }
+
+@media (max-width: 980px) {
+  .gif {
+    height: 65vh; }
+  .gif h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    top: 30%; }
+  .gif h2 a {
+    border-radius: 26px;
+    padding: 7px; } }
+
+@media (max-width: 900px) {
+  .destacado div a img {
+    width: 200px; }
+  .destacado div h3 {
+    font-size: 18px; }
+  .gif {
+    height: 57vh; }
+  .gif h2 {
+    font-size: 10px;
+    margin-bottom: 8px;
+    top: 29%; }
+  .gif h2 a {
+    border-radius: 25px;
+    padding: 7px; }
+  .contactanos h4 {
+    font-size: 13px; }
+  .contactanos a img {
+    height: 35px;
+    width: 35px; }
+  .redesociales a img {
+    height: 30px;
+    width: 30px; }
+  .metodospago h4 {
+    font-size: 14px; }
+  .metodospago a img {
+    height: 45px;
+    width: 45px; } }
+
+@media (max-width: 750px) {
+  .gif {
+    height: 48vh; }
+  .gif h2 {
+    font-size: 9px;
+    margin-bottom: 7px;
+    top: 29%; }
+  .gif h2 a {
+    border-radius: 22px;
+    padding: 5px; }
+  .destacado {
+    flex-direction: column; }
+  .destacado div a img {
+    width: 320px; } }
+
+@media (max-width: 600px) {
+  .gif {
+    height: 40vh; }
+  .tarjetasdecompra {
+    display: flex;
+    flex-direction: column; }
+  .tarjetasdecompra div a img {
+    width: 170px; }
+  .contactanos h4 {
+    font-size: 10px; }
+  .contactanos a img {
+    height: 30px;
+    width: 30px; }
+  .redesociales a img {
+    height: 27px;
+    width: 27px; }
+  .metodospago h4 {
+    font-size: 12px; }
+  .metodospago a img {
+    height: 40px;
+    width: 40px; }
+  .gif h2 {
+    font-size: 8px;
+    margin-bottom: 6px;
+    top: 29%; }
+  .gif h2 a {
+    border-radius: 20px;
+    padding: 5px; } }
+
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 1px; }
+  .contactanos {
+    position: static; }
+  footer div {
+    margin: 10px; }
+  .destacado div a img {
+    width: 200px; }
+  .tarjetasdecompra div a img {
+    width: 150px; }
+  .gif {
+    height: 28vh; }
+  .gif h2 {
+    font-size: 6px;
+    margin-bottom: 5px;
+    top: 29%; }
+  .gif h2 a {
+    border-radius: 18px;
+    padding: 5px; } }
+
+/*? PAGES */
+@media (max-width: 1500px) {
+  .itemgrilla {
+    height: 350px;
+    margin: 10px; }
+  .itemgrilla a img {
+    height: 220px; } }
+
+@media (max-width: 1350px) {
+  .itemgrilla {
+    height: 300px;
+    margin: 10px; }
+  .itemgrilla a img {
+    height: 190px; }
+  .itemgrilla h3 {
+    font-size: 15px; }
+  .itemgrilla p {
+    font-size: 13px; }
+  .itemgrilla button {
+    padding: 8px; }
+  .itemgrilla button a {
+    font-size: 14px;
+    font-weight: 550;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 3px; } }
+
+@media (max-width: 1200px) {
+  .grilla {
+    display: grid;
+    grid-template-rows: repeat 5, auto;
+    grid-template-columns: auto auto;
+    margin-left: 250px;
+    grid-template-areas: "main main" "main main" "main main" "main main" "main main"; } }
+
+@media (max-width: 950px) {
+  .itemgrilla {
+    height: 220px;
+    margin: 10px; }
+  .itemgrilla a img {
+    height: 150px; }
+  .itemgrilla h3 {
+    font-size: 13px; }
+  .itemgrilla p {
+    font-size: 11px; }
+  .itemgrilla button {
+    padding: 7px; }
+  .itemgrilla button a {
+    font-size: 14px;
+    font-weight: 550;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 3px; } }
+
+@media (max-width: 820px) {
+  .grilla {
+    margin-left: 84px; }
+  .boton {
+    width: 84px;
+    height: calc(100vh - auto); }
+  .filtro {
+    opacity: 0;
+    visibility: hidden;
+    height: calc(100vh - 10vh);
+    box-shadow: 0 0 0 100vmax rgba(12, 12, 12, 0.5); }
+  .filtro ul li {
+    margin-left: 20px;
+    list-style: none; }
+  .filtro ul li h3 {
+    margin: 10px;
+    font-size: 13px; }
+  .filtro ul li a p {
+    font-size: 11px;
+    margin: 0;
+    margin-left: 20px;
+    font-weight: 500;
+    color: black; }
+  .abrirmenu {
+    margin-left: 45px;
+    display: block;
+    border: 0;
+    font-size: 1.7rem;
+    background-color: transparent; }
+  .abrirmenu i {
+    color: black !important;
+    background-color: transparent !important; }
+  .cerrarmenu {
+    margin-left: 45px;
+    display: block;
+    border: 0;
+    font-size: 1.7rem;
+    background-color: transparent; }
+  .cerrarmenu i {
+    color: black !important;
+    background-color: transparent !important; }
+  .filtro.visible {
+    opacity: 1;
+    visibility: visible; } }
+
+@media (max-width: 650px) {
+  .grilla {
+    display: grid;
+    grid-template-rows: repeat 10, auto;
+    grid-template-columns: auto;
+    grid-template-areas: "main" "main" "main" "main" "main" "main" "main" "main" "main" "main"; }
+  .itemgrilla {
+    height: 270px;
+    margin: 10px; }
+  .itemgrilla a img {
+    height: 170px; }
+  .itemgrilla h3 {
+    font-size: 15px; }
+  .itemgrilla p {
+    font-size: 13px; }
+  .itemgrilla button {
+    padding: 9px; }
+  .itemgrilla button a {
+    font-size: 16px;
+    font-weight: 550;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 5px; } }
+
+@media (max-width: 470px) {
+  .itemgrilla {
+    height: 240px;
+    margin: 10px; }
+  .itemgrilla a img {
+    height: 150px; }
+  .itemgrilla h3 {
+    font-size: 13px; }
+  .itemgrilla p {
+    font-size: 11px; }
+  .itemgrilla button {
+    padding: 7px; }
+  .itemgrilla button a {
+    font-size: 14px;
+    font-weight: 550;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 3px; } }

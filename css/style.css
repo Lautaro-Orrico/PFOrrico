@@ -37,9 +37,10 @@ header {
     background-color: #e4e3cd;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
-h1 {
+header h1 {
     font-size: 32px;
     font-weight: 550;
     color: rgb(0, 0, 0);
@@ -212,7 +213,7 @@ h1 {
     margin: 10px;
 }
 
-.itemgrilla a img {
+.itemgrilla img {
     height: 300px;
 }
 
@@ -680,7 +681,6 @@ button :hover {
 
 @media (max-width:1200px) {
     .grilla {
-        background-color: #ececdd;
         display: grid;
         margin-left: 250px;
         grid-template-rows: repeat(5, auto);

@@ -1,0 +1,29 @@
+/*! Header */
+
+header {
+    background-color: $color-principal;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    h1 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 30px;
+        font-weight: 550;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        background-color: $color-principal;
+    }
+}
+
+/*? BARRAS DE CADA PAGE */
+
+.barradestacado {
+    background-color: $color-principal;
+    font-size: 14px;
+    padding: 6px;
+    h2 {
+        margin-left: 55px;
+        font-weight: 650;
+    }
+}

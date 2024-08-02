@@ -1,0 +1,158 @@
+/*! MAIN */
+
+.gif {
+    @extend %flex;
+    width: 100%;
+    height: 88vh;
+    justify-content: center;                                                                                                                                                                                                                    
+    background-image: url(../Video/OpPP2.webp);
+    background-size: contain;
+    background-color: $color-secundario;
+    background-repeat: no-repeat;
+    background-position: center;
+    h2{
+        position: relative;
+        top: 31%;
+        font-size: 17px;
+        margin-bottom: 30px;
+        color: black;
+        transition: 0.2s;
+        &:hover {
+            transform: scale(1.05);
+        }
+        a{
+            color: black;
+            background-color: #e4e3cde3;
+            text-decoration: none;
+            border-radius: 26px;
+            padding: 10px;
+            border: 2px solid black;
+            &:hover {
+                background-color: #e4e3cd85;
+                color: rgb(0, 0, 0)
+            }
+        }
+    }
+}
+
+/*? GRILLA */
+
+.grilla {
+    @include grid (grid, repeat (4,auto), auto auto auto );
+    background-color: $color-secundario;
+    margin-left: 250px;
+    grid-template-areas:
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main"
+    ;
+}
+.itemgrilla {
+    align-items: center;
+    text-align: center;
+    background-color: $color-secundario;
+    height: 450px;
+    margin: 10px;
+    a {
+        img {
+            height: 300px
+        }
+    }
+}
+
+/*? FILTRO GRILLA */
+
+.boton {
+    background-color: $color-principal;
+    border-color: black;
+    position: fixed;
+    left: 0rem;
+    width: 250px;
+    height: calc(100vh - 10vh);
+}
+.abrirmenu {
+    display: none;
+}
+.cerrarmenu {
+    display: none;
+}
+.filtro {
+    background-color: $color-principal;
+    border-color: black;
+    position: fixed;
+    left: 0rem;
+    width: 250px;
+    ul {
+        li {
+            margin-left: 20px;
+            list-style: none;
+            h3 {
+                margin: 10px;
+                font-size: 16px;
+            }
+            p {
+                margin: 0;
+                margin-left: 20px;
+                font-weight: 500;
+                color: black;
+            }
+        }
+    }
+}
+.main {
+    background-color: $color-principal;
+    grid-area: main;
+}
+
+/*? TARJETAS DE COMPRA */
+
+.tarjetasdecompra {
+    @extend %flex;
+    justify-content: space-around;
+    background-color: $color-secundario;
+    padding: 15px;
+    div {
+        transition: 0.7s;
+        &:hover {
+            box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.26);
+            -webkit-box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.26);
+            -moz-box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.26);
+        }
+        a{
+            img{
+                width: 200px;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+/*? DESTACADO */
+
+.destacado {
+    @extend %flex;
+    justify-content: space-evenly;
+    background-color: $color-secundario;
+    padding: 15px;
+    div {
+        a {
+            img {
+                transition: 0.5s;
+                &:hover {
+                    box-shadow: 0px 1px 41px 1px rgba(0,0,0,0.36);
+                    -webkit-box-shadow: 0px 1px 41px 1px rgba(0,0,0,0.36);
+                    -moz-box-shadow: 0px 1px 41px 1px rgba(0,0,0,0.36);
+                }
+                width: 400px;
+                height: auto;
+                margin: 15px;
+            }
+        }
+        h3 {
+            font-size: 22px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
