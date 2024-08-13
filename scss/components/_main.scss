@@ -1,5 +1,9 @@
 /*! MAIN */
 
+main {
+    background-color: $color-secundario;
+}
+
 .gif {
     @extend %flex;
     width: 100%;
@@ -12,7 +16,7 @@
     background-position: center;
     h2{
         position: relative;
-        top: 31%;
+        top: 30%;
         font-size: 17px;
         margin-bottom: 30px;
         color: black;
@@ -81,6 +85,7 @@
     background-color: $color-principal;
     border-color: black;
     position: fixed;
+    z-index: 1;
     left: 0rem;
     width: 250px;
     ul {
@@ -113,6 +118,7 @@
     background-color: $color-secundario;
     padding: 15px;
     div {
+        padding: 35px;
         transition: 0.7s;
         &:hover {
             box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.26);
@@ -156,3 +162,20 @@
         }
     }
 }
+
+.accordion {
+    height: 100% ;
+    width: 100% ;
+    padding: 50px;
+}
+
+.mapa {
+    @extend %flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    div{
+        .mb-3 {
+            width: 700px;
+        }
+    }
+    }

@@ -13,12 +13,16 @@
 $color-principal:#e4e3cd;
 $color-secundario:#ececdd;
 
+//! EXTEND
+
 %flex {
     display: flex;
     align-items: center;
     text-align: center;
     background-color: $color-secundario;
 }
+
+//! MIXIN
 
 @mixin grid ($grid, $rows , $columns){
     display: $grid;
@@ -140,5 +144,37 @@ button {
 
 .navbar-brand img {
     height: 50px;
+}
+
+
+/*? ACORDION */
+
+.accordion {
+    --bs-accordion-btn-bg: none;
+    --bs-accordion-active-bg: none;
+    --bs-accordion-active-color: none;
+}
+
+.accordion-button {
+    color: black;
+    font-weight: 700;
+    background-color: $color-secundario;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    &:focus {
+        box-shadow: none;
+        border-color: none;
+        color: black;
+        background-color: $color-secundario;
+    }
+}
+
+.accordion-collapse {
+    margin-left: 0px !important;
+}
+
+.accordion-item {
+    background-color: $color-secundario;
+    color: black;
+    font-weight: 500;
 }
 
